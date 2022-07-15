@@ -1,0 +1,14 @@
+version: '3.7'
+
+
+services:
+  maks_vue:
+    container_name: vue-maks
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - '.:/app_maks'
+    - '/app_maks/node_modules'
+    ports:
+    - '8080:8080'

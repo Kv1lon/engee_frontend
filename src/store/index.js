@@ -5,7 +5,7 @@ import { useToast } from 'vue-toastification'
 
 export default createStore({
 state:{
-    backendUrl:"http://192.168.0.106:8000/",
+    backendUrl:"https://engee-backend.herokuapp.com/",
     status: '',
     access: localStorage.getItem('access') || '',
     refresh: localStorage.getItem('refresh') || '',

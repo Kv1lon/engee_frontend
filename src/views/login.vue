@@ -34,7 +34,7 @@
 
             <div class="card-body px-lg-5 py-lg-5">
               <div class="text-center text-muted mb-4">
-                <small>Или введите данные для входа</small>
+                <small>Введите данные для входа</small>
               </div>
               <form role="form">
                 <div class="form-group mb-3">
@@ -42,7 +42,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input v-model="username" class="form-control" placeholder="Email" type="email">
+                    <input v-model="username" class="form-control" placeholder="Username" type="email">
                   </div>
                 </div>
                 <div class="form-group">

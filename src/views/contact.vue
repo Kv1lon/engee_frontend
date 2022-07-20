@@ -3,7 +3,7 @@
     <div class="preloader__image">
     </div>
 </div>
-    <body class="bg-default">
+    <body v-cloak class="bg-default">
   <!-- Navbar -->
 
   <!-- Main content -->
@@ -193,5 +193,7 @@ validateText(value, ob,chars){
     transition: 0.3s opacity;
     opacity: 0;
   }
-
+[v-cloak]{
+  display: none;
+}
 </style>

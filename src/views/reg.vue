@@ -51,6 +51,8 @@
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
                     <input v-model="email" class="form-control" placeholder="Email" type="email">
+                                                             <span v-if="msg.email">{{msg.email}}</span>
+
                   </div>
                 </div>
                 <div class="form-group">
@@ -65,7 +67,7 @@
                 </div>
 
                 <div class="text-center">
-                  <button :disabled="msg['password']!=''" @click.prevent="register" type="button" class="btn btn-primary mt-4">Создать аккаунт</button>
+                  <button :disabled="msg['password']!=''||!email||!username||msg['email']!=''" @click.prevent="register" type="button" class="btn btn-primary mt-4">Создать аккаунт</button>
                 </div>
               </form>
             </div>
@@ -138,13 +140,26 @@
   } else{
     this.msg['password'] = 'В пароле должно быть минимум 8 символов: цыфры, буквы и спец.символы';
   }
+    },
+      validateEmail(value){
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value))
+  {
+    this.msg['email'] = '';
+  } else{
+    this.msg['email'] = 'Це не схоже на email';
+  }
     },},
           watch: {
             password(value){
                 // binding this to the data value in the email input
                 this.password = value;
                 this.validatePasssword(value);
-            }}}
+            },
+                email(value){
+        // binding this to the data value in the email input
+        this.email = value;
+        this.validateEmail(value);
+      },}}
 </script>
 
 <style scoped>

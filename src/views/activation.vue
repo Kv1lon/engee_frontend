@@ -3,7 +3,7 @@
     <div class="preloader__image">
     </div>
 </div>
-    <body style="height: 100%" class="bg-default">
+    <body v-cloak style="height: 100%" class="bg-default">
   <!-- Navbar -->
 
   <!-- Main content -->
@@ -149,5 +149,8 @@
 
 
 .form-v5-content{
+}
+[v-cloak]{
+  display: none;
 }
 </style>

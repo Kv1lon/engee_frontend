@@ -12,3 +12,9 @@ Write to the Back-end monitoring site to show the electrical system settings.
 Write to the Front-end monitoring site to show the electrical system devices.
 
 <a href="https://imgur.com/hSVM2Wl"><img src="https://i.imgur.com/hSVM2Wl.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/BHAwMLB"><img src="https://i.imgur.com/BHAwMLB.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/XQdRA1j"><img src="https://i.imgur.com/XQdRA1j.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/wIH4lcK"><img src="https://i.imgur.com/wIH4lcK.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/c4Jpivm"><img src="https://i.imgur.com/c4Jpivm.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/hSVM2Wl"><img src="https://i.imgur.com/hSVM2Wl.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/mUpda9j"><img src="https://i.imgur.com/mUpda9j.png" title="source: imgur.com" /></a>

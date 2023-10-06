@@ -11,4 +11,4 @@ Write to the Back-end monitoring site to show the electrical system settings.
 
 Write to the Front-end monitoring site to show the electrical system devices.
 
-[Imgur](https://imgur.com/hSVM2Wl)
+<a href="https://imgur.com/hSVM2Wl"><img src="https://i.imgur.com/hSVM2Wl.png" title="source: imgur.com" /></a>

@@ -17,8 +17,8 @@ COPY package.json /app_maks/package.json
 COPY . /app_maks
 CMD npm run build
 #EXPOSE 8080
-
-#CMD python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000
+COPY .docker/nginx/prod.conf /temp/prod.conf
+RUN envsubst /app_maks < /temp/prod.conf > /etc/nginx/conf.d/default.conf \
 FROM nginx:stable-alpine as production-stage
 
 COPY --from=build-stage /app_maks/dist /usr/share/nginx/html

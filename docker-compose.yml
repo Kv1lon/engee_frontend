@@ -11,4 +11,4 @@ services:
     - '.:/app_maks'
     - '/app_maks/node_modules'
     ports:
-    - '8081:80'
+    - '8080:80'

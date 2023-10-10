@@ -7,7 +7,6 @@ ENV PATH /app_maks/node_modules/.bin:$PATH
 
 # Copy package.json and install dependencies
 COPY package.json /app_maks/package.json
-RUN npm install
 
 # Copy your application code
 COPY . /app_maks

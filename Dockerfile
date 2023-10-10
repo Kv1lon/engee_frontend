@@ -16,7 +16,7 @@ COPY package.json /app_maks/package.json
 #RUN npm install
 
 COPY . /app_maks
-CMD npm run serve
+CMD npm run build
 #EXPOSE 8080
 
 #CMD python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000

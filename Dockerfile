@@ -20,6 +20,7 @@ CMD npm run build
 
 #CMD python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000
 FROM nginx:stable-alpine as production-stage
+
 COPY --from=build-stage /app_maks/dist /usr/share/nginx/html
 #EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

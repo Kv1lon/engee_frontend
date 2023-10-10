@@ -20,4 +20,5 @@ CMD npm run build
 #EXPOSE 8080
 
 #CMD python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000
-# CMD ["%%CMD%%"]
+EXPOSE 8080
+CMD [ "http-server", "dist" ]

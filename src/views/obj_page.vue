@@ -297,6 +297,32 @@
  classes="modal-container" content-class="modal-content">
     </vue-final-modal>
       </div></div></div></div>
+  <footer class="py-5" id="footer-main">
+    <div class="container">
+      <div class="row align-items-center justify-content-xl-between">
+        <div class="col-xl-6">
+          <div class="copyright text-center text-xl-left text-muted">
+            &copy; 2023 <a href="https://github.com/Kv1lon" class="font-weight-bold ml-1" target="_blank">Kv1lon</a>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+            <li class="nav-item">
+              <a  class="nav-link" target="_blank">Kv1lon</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://t.me/liumphis" class="nav-link" target="_blank">Співпраця</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://hiker.mykhailo-skrypnyk.online" class="nav-link" target="_blank">Сайт для туризму</a>
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>

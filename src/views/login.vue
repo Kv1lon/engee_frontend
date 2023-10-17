@@ -68,25 +68,24 @@
       </div>
     </div>
   </div>
-  <!-- Footer -->
-  <footer class="py-5" id="footer-main">
+ <footer class="py-5" id="footer-main">
     <div class="container">
       <div class="row align-items-center justify-content-xl-between">
         <div class="col-xl-6">
           <div class="copyright text-center text-xl-left text-muted">
-            &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">0L1VKA</a>
+            &copy; 2023 <a href="https://github.com/Kv1lon" class="font-weight-bold ml-1" target="_blank">Kv1lon</a>
           </div>
         </div>
         <div class="col-xl-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a  class="nav-link" target="_blank">0L1VKA</a>
+              <a  class="nav-link" target="_blank">Kv1lon</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link" target="_blank">Сотрудничество</a>
+              <a href="https://t.me/liumphis" class="nav-link" target="_blank">Співпраця</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link" target="_blank">Сайт для туризма</a>
+              <a href="http://hiker.mykhailo-skrypnyk.online" class="nav-link" target="_blank">Сайт для туризму</a>
             </li>
             <li class="nav-item">
             </li>

@@ -3,7 +3,7 @@
     <div class="preloader__image">
     </div>
 </div>
-    <body style="height: 100%" class="bg-default">
+    <div class="bg-default">
   <!-- Navbar -->
 
   <!-- Main content -->
@@ -20,6 +20,7 @@
           </div>
         </div>
       </div>
+      <br>
       <div class="separator separator-bottom separator-skew zindex-100">
         <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
@@ -67,25 +68,24 @@
         </div>
       </div>
     </div>
-  </div>
- <footer class="py-5" id="footer-main">
+     <footer class="py-5" id="footer-main">
     <div class="container">
       <div class="row align-items-center justify-content-xl-between">
         <div class="col-xl-6">
           <div class="copyright text-center text-xl-left text-muted">
-            &copy; 2023 <a href="https://github.com/Kv1lon" class="font-weight-bold ml-1" target="_blank">Kv1lon</a>
+            &copy; 2023 <a href="https://github.com/elaiviaien" class="font-weight-bold ml-1" target="_blank">elaiviaien</a>
           </div>
         </div>
         <div class="col-xl-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a  class="nav-link" target="_blank">Kv1lon</a>
+              <a  class="nav-link" target="_blank">elaiviaien</a>
             </li>
             <li class="nav-item">
               <a href="https://t.me/liumphis" class="nav-link" target="_blank">Співпраця</a>
             </li>
             <li class="nav-item">
-              <a href="http://hiker.mykhailo-skrypnyk.online" class="nav-link" target="_blank">Сайт для туризму</a>
+              <a href="http://hiker.elaiviaien.com" class="nav-link" target="_blank">Сайт для туризму</a>
             </li>
             <li class="nav-item">
             </li>
@@ -93,7 +93,10 @@
         </div>
       </div>
     </div>
-  </footer></body>
+  </footer>
+  </div>
+    </div>
+
 </template>
 
 <script>
@@ -129,7 +132,8 @@ created() {
 							let r = this.$router.resolve({
 								name: 'Home', // put your route information in
 							})
-							window.location.assign(r.href)})
+														this.$router.push(r)
+})
 						.catch(err => {console.log(err), this.toast.error("Ви неправильно ввели електронну пошту або пароль"), this.loading = false})}
 			},
 

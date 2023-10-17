@@ -82,19 +82,19 @@
       <div class="row align-items-center justify-content-xl-between">
         <div class="col-xl-6">
           <div class="copyright text-center text-xl-left text-muted">
-            &copy; 2023 <a href="https://github.com/Kv1lon" class="font-weight-bold ml-1" target="_blank">Kv1lon</a>
+            &copy; 2023 <a href="https://github.com/elaiviaien" class="font-weight-bold ml-1" target="_blank">elaiviaien</a>
           </div>
         </div>
         <div class="col-xl-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a  class="nav-link" target="_blank">Kv1lon</a>
+              <a  class="nav-link" target="_blank">elaiviaien</a>
             </li>
             <li class="nav-item">
               <a href="https://t.me/liumphis" class="nav-link" target="_blank">Співпраця</a>
             </li>
             <li class="nav-item">
-              <a href="http://hiker.mykhailo-skrypnyk.online" class="nav-link" target="_blank">Сайт для туризму</a>
+              <a href="http://hiker.elaiviaien.com" class="nav-link" target="_blank">Сайт для туризму</a>
             </li>
             <li class="nav-item">
             </li>
@@ -146,7 +146,7 @@
                             let r = this.$router.resolve({
 								name: '404',
 							})
-							window.location.assign(r.href)
+							this.$router.push(r)
                 })
                this.user  = response
                     this.username = response.username
@@ -156,7 +156,7 @@
                                 let r = this.$router.resolve({
 								name: '404',
 							})
-							window.location.assign(r.href)
+							this.$router.push(r)
                  }
                 },
 
@@ -170,11 +170,11 @@
 							let r = this.$router.resolve({
 								name: 'Home', // put your route information in
 							})
-							window.location.assign(r.href)
+							this.$router.push(r)
 							})
-             .catch(err => {this.toast.error(" Произошла ошибка. Введите валидные данные или попробуйте позже "),  this.loading =false})}
+             .catch(err => {this.toast.error(" Помилка. Введіть валідні дані або спробуйте пізніше "),  this.loading =false})}
                              else {
-                this.toast.error(" Произошла ошибка. Введите валидные данные или попробуйте позже ")
+                this.toast.error(" Помилка. Введіть валідні дані або спробуйте пізніше ")
                 }
 
         },
@@ -183,7 +183,7 @@
   {
     this.msg['email'] = '';
   } else{
-    this.msg['email'] = 'Это не похоже на email';
+    this.msg['email'] = 'Це не схоже на email';
   }
     },
         resetPassword(){
@@ -192,9 +192,9 @@
                     formData.append('email', this.user.email);
                                     axios({url: this.$store.state.backendUrl+`auth/users/reset_password/`, data:formData, method: 'POST' }).then(resp => {
                                       this.loading =false
-                                      this.toast.success('На Вашу почту была выслана ссылка для смены пароля')
+                                      this.toast.success('На Вашу пошту було надіслано посилання для зміни пароля')
                                       console.log(resp)}
-                                    ).catch(err =>( this.loading = false, console.log(err), this.toast.error('Произошла ошибка')))
+                                    ).catch(err =>( this.loading = false, console.log(err), this.toast.error('Помилка!')))
         }
 
     }}
@@ -246,4 +246,9 @@
     color: #384452;
     padding: 1%;
   }
+#footer-main{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 </style>

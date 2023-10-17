@@ -5,7 +5,7 @@ import { useToast } from 'vue-toastification'
 
 export default createStore({
 state:{
-    backendUrl:"http://159.89.105.77:8000/",
+    backendUrl:"http://hiker.elaiviaien.com/",
     status: '',
     access: localStorage.getItem('access') || '',
     refresh: localStorage.getItem('refresh') || '',

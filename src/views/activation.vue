@@ -3,7 +3,7 @@
     <div class="preloader__image">
     </div>
 </div>
-    <body v-cloak style="height: 100%" class="bg-default">
+    <body v-cloak class="bg-default">
   <!-- Navbar -->
 
   <!-- Main content -->
@@ -42,19 +42,19 @@
       <div class="row align-items-center justify-content-xl-between">
         <div class="col-xl-6">
           <div class="copyright text-center text-xl-left text-muted">
-            &copy; 2023 <a href="https://github.com/Kv1lon" class="font-weight-bold ml-1" target="_blank">Kv1lon</a>
+            &copy; 2023 <a href="https://github.com/elaiviaien" class="font-weight-bold ml-1" target="_blank">elaiviaien</a>
           </div>
         </div>
         <div class="col-xl-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a  class="nav-link" target="_blank">Kv1lon</a>
+              <a  class="nav-link" target="_blank">elaiviaien</a>
             </li>
             <li class="nav-item">
               <a href="https://t.me/liumphis" class="nav-link" target="_blank">Співпраця</a>
             </li>
             <li class="nav-item">
-              <a href="http://hiker.mykhailo-skrypnyk.online" class="nav-link" target="_blank">Сайт для туризму</a>
+              <a href="http://hiker.elaiviaien.com" class="nav-link" target="_blank">Сайт для туризму</a>
             </li>
             <li class="nav-item">
             </li>
@@ -93,7 +93,7 @@
                 	let r = this.$router.resolve({
 								name: 'Home', // put your route information in
 							})
-                setTimeout(() => window.location.assign(r.href), 4000);
+                setTimeout(() => 							this.$router.push(r), 4000);
 
 
               }).catch(err=>{this.toast.error('Ошибка. Ваш токен устарел'), this.loading= false})

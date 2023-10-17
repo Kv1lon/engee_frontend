@@ -36,17 +36,17 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a v-if="isLoggedIn" href="" @click.prevent="goTo('Home',null)" class="nav-link">
-              <span class="nav-link-inner--text">Главная</span>
+              <span class="nav-link-inner--text">Головна</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="" @click.prevent="goTo('contacts',null)"  class="nav-link">
-              <span class="nav-link-inner--text">Связь с нами</span>
+              <span class="nav-link-inner--text">Зв'язок з нами</span>
             </a>
           </li>
           <li class="nav-item">
             <a v-if="!isLoggedIn" href="" @click.prevent="goTo('reg',null)"  class="nav-link">
-              <span class="nav-link-inner--text">Регистрация</span>
+              <span class="nav-link-inner--text">Реєстрація</span>
             </a>
             <a v-if="isLoggedIn" href="" @click.prevent="goTo('profile',{slug:user.slug})"  class="nav-link">
               <span class="nav-link-inner--text">{{user.username}}</span>
@@ -54,10 +54,10 @@
           </li>
                     <li class="nav-item">
             <a v-if="!isLoggedIn"  @click.prevent="goTo('login',null)" href="" class="nav-link">
-              <span class="nav-link-inner--text">Вход</span>
+              <span class="nav-link-inner--text">Вхід</span>
             </a>
             <a href="#" v-if="isLoggedIn"  class="nav-link">
-              <span @click.prevent="logout" class="nav-link-inner--text">Выход</span>
+              <span @click.prevent="logout" class="nav-link-inner--text">Вихід</span>
             </a>
           </li>
 

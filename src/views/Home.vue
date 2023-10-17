@@ -14,9 +14,9 @@
         <div class="header-body text-center mb-7">
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-              <h1 class="text-white">Добро пожаловать!</h1>
-              <p class="text-lead text-white">Для добавления объекта в систему мониторинга нажмите на кнопку ниже</p>
-              <button class="btn btn-dark" @click.prevent="show= true">Добавить обьект</button>
+              <h1 class="text-white">Ласкаво просимо!</h1>
+              <p class="text-lead text-white">Для додавання об'єкту в систему мониторингу, натисніть кнопку нижче</p>
+              <button class="btn btn-dark" @click.prevent="show= true">Додати об'єкт</button>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@
                 <div class="card-body px-lg-5 py-lg-5" @click.prevent="goTo('obj_page',{slug:obj.slug})" >
                   <div class="row">
                     <div class="col" >
-                      <div class="card-title text-uppercase  mb-0">Объект</div>
+                      <div class="card-title text-uppercase  mb-0">Об'єкт</div>
                       <div class="card-title text-uppercase  mb-0">{{ obj.title }}</div>
                       <span class="h2 font-weight-bold mb-0">{{temp}}</span>
                     </div>
@@ -48,7 +48,7 @@
 <!--                    </div>-->
                   </div>
                 </div>
-                                                            <button class="btn" style="color:white;float: right" @click.prevent="removeObj(obj.title)">Удалить</button>
+                                                            <button class="btn" style="color:white;float: right" @click.prevent="removeObj(obj.title)">Видалити</button>
                   </div>
 
               <div v-else  class="card bg-gradient-danger" style="border-radius: 20px;color: white">
@@ -68,7 +68,7 @@
 <!--                    </div>-->
                   </div>
                 </div>
-                                                            <button class="btn" style="color: white;float: right" @click.prevent="removeObj(obj.title)">Удалить</button>
+                                                            <button class="btn" style="color: white;float: right" @click.prevent="removeObj(obj.title)">Видалити</button>
                   </div>
 
               </div>
@@ -83,7 +83,7 @@
  classes="modal-container" content-class="modal-content">
 <font-awesome-icon  class="modal__close" @click="show = false" :icon="['fas', 'times']"  />
            <input v-model="objname" type="text" class="form-control" placeholder="Ip адрес обьекта...">
-            <button class=" btn btn-primary" @click.prevent="AddObj()"> Добавить</button>
+            <button class=" btn btn-primary" @click.prevent="AddObj()"> Додати</button>
     </vue-final-modal>
 
 

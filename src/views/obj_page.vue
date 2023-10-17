@@ -20,47 +20,47 @@
                     </li>
                     <li data-aos="slide-up" data-aos-delay="200" @click.prevent = "choosePeriod('6h')" class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
                       <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">6 часов</span>
-                        <span class="d-md-none">6</span>
+                        <span class="d-none d-md-block">6 годин</span>
+                        <span class="d-md-none">6год</span>
                       </a>
                     </li>
                                         <li data-aos="slide-down" data-aos-delay="200" @click.prevent = "choosePeriod('3h')" class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
                       <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">3 часа</span>
-                        <span class="d-md-none">3</span>
+                        <span class="d-none d-md-block">3 години</span>
+                        <span class="d-md-none">3год</span>
                       </a>
                     </li>
                                         <li data-aos="slide-up" data-aos-delay="200" @click.prevent = "choosePeriod('h')" class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
                       <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">час</span>
-                        <span class="d-md-none">1</span>
+                        <span class="d-none d-md-block">1 година</span>
+                        <span class="d-md-none">1год</span>
                       </a>
                     </li>
                                         <li data-aos="slide-down" data-aos-delay="200" @click.prevent = "choosePeriod('30m')" class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
                       <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">30 минут</span>
-                        <span class="d-md-none">30м</span>
+                        <span class="d-none d-md-block">30 хвилин</span>
+                        <span class="d-md-none">30хв</span>
 
                       </a>
                     </li>
                        <li data-aos="slide-up" data-aos-delay="200" @click.prevent = "choosePeriod('15m')" class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
                       <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">15 минут</span>
-                        <span class="d-md-none">15м</span>
+                        <span class="d-none d-md-block">15 хвилин</span>
+                        <span class="d-md-none">15хв</span>
 
                       </a>
                     </li>
                        <li data-aos="slide-down" data-aos-delay="200" @click.prevent = "choosePeriod('5m')" class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
                       <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">5 минут</span>
-                        <span class="d-md-none">5м</span>
+                        <span class="d-none d-md-block">5 хвилин</span>
+                        <span class="d-md-none">5хв</span>
 
                       </a>
                     </li>
                      <li data-aos="slide-up" data-aos-delay="200" @click.prevent = "choosePeriod('m')" class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
                       <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">минута</span>
-                        <span class="d-md-none">1м</span>
+                        <span class="d-none d-md-block">хвилина</span>
+                        <span class="d-md-none">1хв</span>
 
                       </a>
                     </li>
@@ -134,7 +134,7 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Напряжение</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Напруга</h5>
                       <span class="h2 font-weight-bold mb-0">{{volt}}</span>
                     </div>
                     <div class="col-auto">
@@ -164,8 +164,8 @@
             <div class="card-header bg-transparent">
               <div class="row align-items-center">
                 <div class="col">
-                  <h6 class="text-light text-uppercase ls-1 mb-1">Обзор</h6>
-                  <h5 class="h3 text-white mb-0">Графики</h5>
+                  <h6 class="text-light text-uppercase ls-1 mb-1">Огляд</h6>
+                  <h5 class="h3 text-white mb-0">Графіки</h5>
                 </div>
                 <div class="col">
 
@@ -196,9 +196,6 @@
                 <div class="col">
                   <h3 class="mb-0">Статистика</h3>
                 </div>
-                <div class="col text-right">
-                  <a href="#!" class="btn btn-sm btn-primary">See all</a>
-                </div>
               </div>
             </div>
             <div class="table-responsive">
@@ -207,9 +204,9 @@
                 <thead class="thead-light">
                   <tr>
                     <th scope="col">Параметр</th>
-                    <th scope="col">Старое значение</th>
-                    <th scope="col">Новое значение</th>
-                    <th scope="col">Изменение</th>
+                    <th scope="col">Старе значення</th>
+                    <th scope="col">Нове значення</th>
+                    <th scope="col">Зміна</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -273,7 +270,7 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      Напряжение
+                      Напруга
                     </th>
                     <td>
                       {{volto}}

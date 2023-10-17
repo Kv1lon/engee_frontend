@@ -18,7 +18,7 @@
                 <h4 style="color: mintcream">Звяжіться з нами!</h4>
                 <div class="hline"></div>
                 <p style="color: mintcream">Для звязку с нашою компанією щодо реклами, співпраці, повідомленні про проблеми з  сайтом заповніть дану форму.</p>
-    <div class="form-group"><input type="name" name="name" class="form-control" placeholder="Ваше имя"  v-model="name" >
+    <div class="form-group"><input type="name" name="name" class="form-control" placeholder="Ваше ім'я"  v-model="name" >
         <span v-if="msg.name">{{msg.name}}</span>
     </div>
     <div class="form-group">
@@ -33,7 +33,7 @@
     </div>
 
     <div class="form-group">
-        <textarea class="form-control" name="message"  placeholder="Сообщение" rows="5" data-rule="required" data-msg="Please write something for us" v-model="message"></textarea>
+        <textarea class="form-control" name="message"  placeholder="Повідомлення" rows="5" data-rule="required" data-msg="Please write something for us" v-model="message"></textarea>
         <span v-if="msg.message">{{msg.message}}</span>
 
     </div>
@@ -44,7 +44,7 @@
             <div  class="col-lg-4" style="color: mintcream">
         <h4 style="color: mintcream">Наша адреса</h4><div class="hline"></div><p>
           Бэйкер-стріт , 221б,<br/> 49099, Дніпро,<br/>Україна.<br/></p>
-        <p>Email: hello@hiker.com<br/> Тел: +380 96-8493-4893
+        <p>Email: skrypnyk.michael@gmail.com<br/> Тел: +380 068-639-77-25
         </p>
       </div>
     </div>

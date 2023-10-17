@@ -14,8 +14,8 @@
         <div class="header-body text-center mb-7">
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-              <h1 class="text-white">Добро пожаловать!</h1>
-              <p class="text-lead text-white">Войдите в свой аккаунт для получения доступа к нужной информации</p>
+              <h1 class="text-white">Ласкаво просимо!</h1>
+              <p class="text-lead text-white">Увійдіть у свій аккаунт для отримання доступу до потрібної інформації</p>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
 
             <div class="card-body px-lg-5 py-lg-5">
               <div class="text-center text-muted mb-4">
-                <small>Введите данные для входа</small>
+                <small>Введіть свої дані для входу</small>
               </div>
               <form role="form">
                 <div class="form-group mb-3">
@@ -42,7 +42,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                     </div>
-                    <input v-model="username" class="form-control" placeholder="Username" type="email">
+                    <input v-model="username" class="form-control" placeholder="Логін" type="username">
                   </div>
                 </div>
                 <div class="form-group">
@@ -58,7 +58,7 @@
 
                 </div>
                 <div class="text-center">
-                  <button @click.prevent="login" type="button" class="btn btn-primary my-4">Войти</button>
+                  <button @click.prevent="login" type="button" class="btn btn-primary my-4">Увійти</button>
                 </div>
               </form>
             </div>

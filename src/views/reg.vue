@@ -13,8 +13,8 @@
         <div class="header-body text-center mb-7">
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-              <h1 class="text-white">Создайте аккаунт</h1>
-              <p class="text-lead text-white">Зарегестрируйтесь и начните получать информацию о своих обьектах из люой точки мира</p>
+              <h1 class="text-white">Створіть аккаунт</h1>
+              <p class="text-lead text-white">Зареєструйтесь і почніть отримувати інформацію про свої об'єкти з будь-якої точки світу</p>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
 
             <div class="card-body px-lg-5 py-lg-5">
               <div class="text-center text-muted mb-4">
-                <small>Или введите свои данные</small>
+                <small>Введіть свої дані</small>
               </div>
               <form role="form">
                 <div class="form-group">
@@ -42,7 +42,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                     </div>
-                    <input v-model="username" class="form-control" placeholder="Имя" type="text">
+                    <input v-model="username" class="form-control" placeholder="Ім'я" type="text" name="username">
                   </div>
                 </div>
                 <div class="form-group">
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="text-center">
-                  <button :disabled="msg['password']!=''||!email||!username||msg['email']!=''" @click.prevent="register" type="button" class="btn btn-primary mt-4">Создать аккаунт</button>
+                  <button :disabled="msg['password']!=''||!email||!username||msg['email']!=''" @click.prevent="register" type="button" class="btn btn-primary mt-4">Створити аккаунт</button>
                 </div>
               </form>
             </div>

@@ -3,12 +3,12 @@ version: '3.7'
 
 services:
   maks_vue:
-    container_name: vue-maks
+    container_name: vue-engee
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-    - '.:/app_maks'
-    - '/app_maks/node_modules'
+    - '.:/app_engee'
+    - '/app_engee/node_modules'
     ports:
     - '8080:80'

@@ -207,7 +207,7 @@ if (!this.$store.state.access){
   .col-xl-8{
  margin-left: auto;
     margin-right: auto;  }
-  ::v-deep .modal-container {
+  :deep(.modal-container) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,7 +219,7 @@ if (!this.$store.state.access){
   cursor: pointer;
   color:grey;
 }
-::v-deep .modal-container {
+  :deep(.modal-container) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,7 +228,7 @@ if (!this.$store.state.access){
   color:black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-::v-deep .modal-content {
+:deep(.modal-content) {
   position: relative;
   display: flex;
   flex-direction: column;

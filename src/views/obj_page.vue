@@ -525,7 +525,7 @@ for(let i in datasort.reverse()){
 .col-xl-8{
  margin-left: auto;
     margin-right: auto;  }
-  ::v-deep .modal-container {
+  :deep(.modal-container) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -533,7 +533,7 @@ for(let i in datasort.reverse()){
   .nav-item{
     margin-bottom: 3%;
   }
-::v-deep .modal-content {
+  :deep(.modal-container) {
   position: relative;
   display: flex;
   flex-direction: column;
